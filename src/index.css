@@ -1,13 +1,167 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset & Full Height */
+html,
+body,
+#root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ✅ Full-screen background */
+.app-background {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./assets/pitch.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
 }
+
+/* ✅ Navigation links — white, larger, spaced, and aligned to the right */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  animation: fadeInNav 2s ease-in-out;
+}
+
+nav div:last-child {
+  display: flex;
+  gap: 2rem;         /* space between links */
+  margin-left: auto; /* pushes links to the right */
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #22c55e; /* Tailwind green-400 */
+  transform: scale(1.1);
+}
+
+/* ✅ Hero text (centered + white) */
+main h1,
+main p {
+  color: white;
+  text-align: center;
+}
+
+/* ✅ Footer styling (smaller, cleaner) */
+footer {
+  background: rgba(0, 0, 0, 0.55); /* slightly lighter translucent black */
+  padding: 0.4rem 0; /* smaller padding — was 0.75rem */
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem; /* smaller gap between icons and text */
+}
+
+/* ✅ Social icons */
+footer .social-icons {
+  display: flex;
+  gap: 1.5rem; /* good spacing between icons */
+  font-size: 1.6rem; /* slightly smaller than before */
+  justify-content: center;
+}
+
+/* ✅ Icon colors */
+footer .social-icons a:nth-child(1) { color: #1877f2; } /* Facebook blue */
+footer .social-icons a:nth-child(2) { color: #e1306c; } /* Instagram pink */
+footer .social-icons a:nth-child(3) { color: #1da1f2; } /* Twitter blue */
+
+footer .social-icons a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* ✅ Footer text */
+footer p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0; /* removes extra white space */
+}
+
+/* ✅ Smooth fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ✅ Fade-in animation for navbar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav {
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+
+/* ✅ Fade-in animation for hero text (with delay) */
+@keyframes fadeInHero {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* The first line */
+.hero-text:first-of-type {
+  animation: fadeInHero 1.5s ease-in-out forwards;
+}
+
+/* The second line (fades in later) */
+.hero-text:last-of-type {
+  animation: fadeInHero 1.5s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
