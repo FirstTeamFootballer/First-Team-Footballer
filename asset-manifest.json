@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/First-Team-Footballer/static/css/main.c588bae8.css",
-    "main.js": "/First-Team-Footballer/static/js/main.e50b1bbc.js",
-    "static/js/453.b5a9c8df.chunk.js": "/First-Team-Footballer/static/js/453.b5a9c8df.chunk.js",
-    "static/media/logo.jpg": "/First-Team-Footballer/static/media/logo.59f37bf844ca6d001460.jpg",
-    "static/media/pitch.jpg": "/First-Team-Footballer/static/media/pitch.3eb70e928382a422d27b.jpg",
-    "index.html": "/First-Team-Footballer/index.html",
-    "main.c588bae8.css.map": "/First-Team-Footballer/static/css/main.c588bae8.css.map",
-    "main.e50b1bbc.js.map": "/First-Team-Footballer/static/js/main.e50b1bbc.js.map",
-    "453.b5a9c8df.chunk.js.map": "/First-Team-Footballer/static/js/453.b5a9c8df.chunk.js.map"
+    "main.css": "/first-team-footballer/static/css/main.6cf343b5.css",
+    "main.js": "/first-team-footballer/static/js/main.f5138376.js",
+    "static/js/453.b5a9c8df.chunk.js": "/first-team-footballer/static/js/453.b5a9c8df.chunk.js",
+    "static/media/logo.jpg": "/first-team-footballer/static/media/logo.59f37bf844ca6d001460.jpg",
+    "static/media/pitch.jpg": "/first-team-footballer/static/media/pitch.3eb70e928382a422d27b.jpg",
+    "index.html": "/first-team-footballer/index.html",
+    "main.6cf343b5.css.map": "/first-team-footballer/static/css/main.6cf343b5.css.map",
+    "main.f5138376.js.map": "/first-team-footballer/static/js/main.f5138376.js.map",
+    "453.b5a9c8df.chunk.js.map": "/first-team-footballer/static/js/453.b5a9c8df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c588bae8.css",
-    "static/js/main.e50b1bbc.js"
+    "static/css/main.6cf343b5.css",
+    "static/js/main.f5138376.js"
   ]
 }
