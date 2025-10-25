@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/first-team-footballer/static/css/main.6cf343b5.css",
-    "main.js": "/first-team-footballer/static/js/main.f5138376.js",
+    "main.js": "/first-team-footballer/static/js/main.291b93b9.js",
     "static/js/453.b5a9c8df.chunk.js": "/first-team-footballer/static/js/453.b5a9c8df.chunk.js",
     "static/media/logo.jpg": "/first-team-footballer/static/media/logo.59f37bf844ca6d001460.jpg",
     "static/media/pitch.jpg": "/first-team-footballer/static/media/pitch.3eb70e928382a422d27b.jpg",
     "index.html": "/first-team-footballer/index.html",
     "main.6cf343b5.css.map": "/first-team-footballer/static/css/main.6cf343b5.css.map",
-    "main.f5138376.js.map": "/first-team-footballer/static/js/main.f5138376.js.map",
+    "main.291b93b9.js.map": "/first-team-footballer/static/js/main.291b93b9.js.map",
     "453.b5a9c8df.chunk.js.map": "/first-team-footballer/static/js/453.b5a9c8df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cf343b5.css",
-    "static/js/main.f5138376.js"
+    "static/js/main.291b93b9.js"
   ]
 }
