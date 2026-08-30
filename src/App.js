@@ -1251,7 +1251,7 @@ if (page === "enquiry-success") {
         <span>Friendship</span>
         <span>Character</span>
         <span>Competition</span>
-        <span>Resiliance</span>
+        <span>Resilience</span>
 
       </div>
 
