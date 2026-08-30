@@ -439,6 +439,13 @@ if (page === "enquiry-success") {
           
         </nav>
 
+<a
+  href="/clubs-schools.html"
+  className="mobile-clubs-button"
+>
+  Clubs & Schools
+</a>
+
      <a
   href="https://buy.stripe.com/bJedR84Nh8YYdQs2L8dby09"
   className="header-cta"
