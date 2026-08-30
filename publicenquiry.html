@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry | First Team Footballer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #080808;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .display {
+      font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+      text-transform: uppercase;
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      padding: 34px 7% 80px;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(72, 44, 110, 0.28), transparent 34%),
+        #080808;
+    }
+
+    .topbar {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo img {
+      width: 190px;
+      height: auto;
+      display: block;
+    }
+
+    .back-link {
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.58;
+    }
+
+    .enquiry-layout {
+      max-width: 1180px;
+      margin: 95px auto 0;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .kicker {
+      margin: 0 0 18px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+
+    .intro h1 {
+      margin: 0;
+      font-size: clamp(58px, 7vw, 100px);
+      line-height: 0.88;
+    }
+
+    .intro h1 span {
+      display: block;
+    }
+
+    .intro-copy {
+      max-width: 520px;
+      margin: 28px 0 0;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .contact-note {
+      margin-top: 42px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.62);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .form-card {
+      background: #f4f1eb;
+      color: #080808;
+      padding: 38px;
+      border-radius: 12px;
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px 14px;
+      border: 1px solid rgba(8, 8, 8, 0.18);
+      border-radius: 4px;
+      background: #ffffff;
+      color: #080808;
+      font: inherit;
+      font-size: 15px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #080808;
+      outline-offset: 1px;
+    }
+
+    textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 8px;
+      padding: 17px 24px;
+      border: 0;
+      background: #080808;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      transition: transform 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .privacy-note {
+      margin: 16px 0 0;
+      font-size: 11px;
+      line-height: 1.55;
+      color: rgba(8,8,8,0.58);
+    }
+
+    .conditional-field {
+      display: none;
+    }
+
+    @media (max-width: 850px) {
+      .page-shell {
+        padding: 26px 24px 60px;
+      }
+
+      .logo img {
+        width: 160px;
+      }
+
+      .enquiry-layout {
+        margin-top: 70px;
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .field-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .form-card {
+        padding: 26px 20px;
+      }
+
+      .intro h1 {
+        font-size: 54px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page-shell">
+
+    <div class="topbar">
+      <a href="/" class="logo" aria-label="Back to First Team Footballer">
+        <img src="/White%20Logo.png" alt="First Team Footballer">
+      </a>
+
+      <a
+  href="/clubs-schools.html"
+  class="back-link"
+  onclick="history.back(); return false;"
+>
+  ← Back To Clubs & Schools
+</a>
+    </div>
+
+    <div class="enquiry-layout">
+
+      <section class="intro">
+        <p class="kicker">Clubs • Academies • Schools</p>
+
+        <h1 class="display">
+          Start A
+          <span>Conversation.</span>
+        </h1>
+
+        <p class="intro-copy">
+          Whether you're interested in a bulk order or joining the First Team Footballer
+          Club Partner Programme, send us a few details and we'll get back to you.
+        </p>
+
+        <p class="contact-note">
+          Prefer email? You can also contact us directly at
+          <strong>info@firstteamfootballer.com</strong>.
+        </p>
+      </section>
+
+      <section class="form-card">
+
+        <form action="/send-enquiry.php" method="POST">
+
+          <div class="field">
+            <label for="enquiryType">What are you interested in?</label>
+
+            <select id="enquiryType" name="enquiry_type" required>
+              <option value="">Select an option</option>
+              <option value="Bulk Order">Bulk Order</option>
+              <option value="Club Partner Programme">Club Partner Programme</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="organisation">Club / School / Organisation</label>
+              <input
+                type="text"
+                id="organisation"
+                name="organisation"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+              >
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="organisationType">Organisation Type</label>
+
+            <select
+              id="organisationType"
+              name="organisation_type"
+              required
+            >
+              <option value="">Select an option</option>
+              <option value="Grassroots Football Club">Grassroots Football Club</option>
+              <option value="Football Academy">Football Academy</option>
+              <option value="Primary School">Primary School</option>
+              <option value="Secondary School">Secondary School</option>
+              <option value="Community Organisation">Community Organisation</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field conditional-field" id="bulkQuantityField">
+            <label for="quantity">Approximate Number Of Games</label>
+
+            <select id="quantity" name="quantity">
+              <option value="">Select an option</option>
+              <option value="10 Games">10 Games</option>
+              <option value="20 Games">20 Games</option>
+              <option value="50+ Games">50+ Games</option>
+              <option value="Not Sure Yet">Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="field conditional-field" id="partnerSizeField">
+            <label for="clubSize">Approximate Number Of Players / Members</label>
+            <input
+              type="text"
+              id="clubSize"
+              name="club_size"
+              placeholder="e.g. 250"
+            >
+          </div>
+
+          <div class="field">
+            <label for="message">Anything Else You'd Like Us To Know?</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us a little about your club, school or enquiry..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Send Enquiry
+          </button>
+
+          <p class="privacy-note">
+            We'll only use the details you provide to respond to your enquiry.
+          </p>
+
+        </form>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <script>
+    const enquiryType = document.getElementById("enquiryType");
+    const bulkQuantityField = document.getElementById("bulkQuantityField");
+    const partnerSizeField = document.getElementById("partnerSizeField");
+
+    function updateFormFields() {
+      bulkQuantityField.style.display =
+        enquiryType.value === "Bulk Order" ? "block" : "none";
+
+      partnerSizeField.style.display =
+        enquiryType.value === "Club Partner Programme" ? "block" : "none";
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+
+    if (type === "bulk") {
+      enquiryType.value = "Bulk Order";
+    }
+
+    if (type === "partner") {
+      enquiryType.value = "Club Partner Programme";
+    }
+
+    updateFormFields();
+
+    enquiryType.addEventListener("change", updateFormFields);
+  </script>
+
+</body>
+</html>

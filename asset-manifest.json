@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.2fea8b63.css",
-    "main.js": "/static/js/main.b314bd9d.js",
+    "main.css": "/static/css/main.9b1d2710.css",
+    "main.js": "/static/js/main.e37aa4dc.js",
     "static/js/453.b5a9c8df.chunk.js": "/static/js/453.b5a9c8df.chunk.js",
-    "static/media/logo.jpg": "/static/media/logo.59f37bf844ca6d001460.jpg",
-    "static/media/pitch.jpg": "/static/media/pitch.3eb70e928382a422d27b.jpg",
+    "static/media/FTFPromo.mp4": "/static/media/FTFPromo.37d52a04f3c34eececa8.mp4",
+    "static/media/gift-football-fan.jpeg": "/static/media/gift-football-fan.27a2db5de1b153c33365.jpeg",
+    "static/media/together-family.jpeg": "/static/media/together-family.68bee823c0bdfbdc9155.jpeg",
+    "static/media/together-football.jpeg": "/static/media/together-football.d80376befdfe488c7e36.jpeg",
+    "static/media/together-friends.jpeg": "/static/media/together-friends.c80d3b25d3596f092cb0.jpeg",
+    "static/media/Roarer.png": "/static/media/Roarer.692e3f3dbbae700ae1a3.png",
+    "static/media/four-corner-development.png": "/static/media/four-corner-development.705d952183bdf6db66bc.png",
+    "static/media/White Logo.png": "/static/media/White Logo.46c44640444e896628c9.png",
+    "static/media/whats-in-box.jpg": "/static/media/whats-in-box.91f183a4405ea69fadcd.jpg",
+    "static/media/psychological-icon.png": "/static/media/psychological-icon.8c7a59d25dc28c15a06d.png",
+    "static/media/physical-icon.png": "/static/media/physical-icon.493afe1269bdea7be658.png",
+    "static/media/rest-day-icon.png": "/static/media/rest-day-icon.f3bf50c0bedb4598693a.png",
     "index.html": "/index.html",
-    "main.2fea8b63.css.map": "/static/css/main.2fea8b63.css.map",
-    "main.b314bd9d.js.map": "/static/js/main.b314bd9d.js.map",
+    "main.9b1d2710.css.map": "/static/css/main.9b1d2710.css.map",
+    "main.e37aa4dc.js.map": "/static/js/main.e37aa4dc.js.map",
     "453.b5a9c8df.chunk.js.map": "/static/js/453.b5a9c8df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fea8b63.css",
-    "static/js/main.b314bd9d.js"
+    "static/css/main.9b1d2710.css",
+    "static/js/main.e37aa4dc.js"
   ]
 }
