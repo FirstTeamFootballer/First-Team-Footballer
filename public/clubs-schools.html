@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Clubs & Schools | First Team Footballer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #080808;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .display {
+      font-family:
+        Impact,
+        Haettenschweiler,
+        "Arial Narrow Bold",
+        sans-serif;
+      text-transform: uppercase;
+    }
+
+    .kicker {
+      margin: 0 0 18px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      opacity: 0.62;
+    }
+
+    .section {
+      padding: 110px 7%;
+    }
+
+    .section-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      margin: 0;
+      font-size: clamp(54px, 7vw, 104px);
+      line-height: 0.9;
+    }
+
+    .section-heading span {
+      display: block;
+    }
+
+    .section-copy {
+      max-width: 760px;
+      margin-top: 28px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .light {
+      background: #f4f1eb;
+      color: #080808;
+    }
+
+    .light .section-copy {
+      color: rgba(8, 8, 8, 0.72);
+    }
+
+    /* HERO */
+
+.clubs-page-logo {
+  position: absolute;
+  top: 32px;
+  left: 7%;
+  z-index: 10;
+  display: block;
+}
+
+.clubs-page-logo img {
+  width: 190px;
+  height: auto;
+}
+    .hero {
+position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      padding: 140px 7% 110px;
+      background:
+        radial-gradient(circle at 75% 30%, rgba(72, 44, 110, 0.28), transparent 35%),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #080808 90%);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(64px, 7.2vw, 112px);
+  line-height: 0.86;
+  white-space: nowrap;
+}
+
+    .hero h1 span {
+      display: block;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 30px 0 0;
+      font-size: 20px;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.76);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 36px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 230px;
+      padding: 16px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #080808;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #ffffff;
+    }
+
+    /* START WITH WHAT THEY LOVE */
+
+    .love-statement {
+      margin-top: 55px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(8, 8, 8, 0.16);
+    }
+
+    .love-statement h3 {
+      margin: 0;
+      font-size: clamp(42px, 5vw, 76px);
+      line-height: 0.94;
+    }
+
+    /* CLUBS */
+
+
+
+    .corner-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 60px;
+    }
+
+.corner-card {
+  background: transparent;
+  border: 8px solid #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.corner-card-shell {
+  min-height: 264px;
+  height: 100%;
+  padding: 24px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  color: #080808;
+}
+
+.corner-card h3 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+}
+.psychological h3 {
+  font-size: 27px;
+  text-align: center;
+  width: 100%;
+}
+
+.corner-icon {
+  flex: 1;
+  width: 100%;
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corner-icon img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transform: scale(1.65);
+}
+
+.corner-card p {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+    .technical { background: #ef161d; }
+    .tactical { background: #e46164; }
+    .physical { background: #f3d029; }
+    .psychological { background: #6dbb58; }
+    .social { background: #4f96d1; }
+
+    .pitch-statement {
+      max-width: 960px;
+      margin-top: 40px;
+      font-size: clamp(46px, 6vw, 88px);
+      line-height: 0.9;
+    }
+
+    /* SCHOOLS */
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 55px;
+    }
+
+    .education-card {
+      min-height: 220px;
+      padding: 28px;
+      background: #080808;
+      color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .education-card h3 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .education-card p {
+      margin: 20px 0 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .learning-line {
+      margin-top: 65px;
+      font-size: clamp(46px, 6vw, 90px);
+      line-height: 0.9;
+    }
+
+    /* USE CASES */
+
+    .use-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 55px;
+    }
+
+    .use-card {
+      padding: 26px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: #111111;
+    }
+
+    .use-card strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* BULK */
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 58px;
+    }
+
+    .price-card {
+      position: relative;
+      padding: 34px;
+      background: #ffffff;
+      color: #080808;
+      border-radius: 10px;
+    }
+
+    .price-card.featured {
+      background: #080808;
+      color: #ffffff;
+    }
+
+    .price-label {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    .price-card h3 {
+      margin: 14px 0 0;
+      font-size: 42px;
+      line-height: 0.95;
+    }
+
+    .price {
+      margin: 24px 0 0;
+      font-size: 48px;
+      font-weight: 900;
+    }
+
+    .price-note {
+      margin: 12px 0 0;
+      font-size: 14px;
+      line-height: 1.5;
+      opacity: 0.68;
+    }
+
+    .most-popular {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    /* PARTNER */
+
+    .partner-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 56px;
+    }
+
+    .partner-step {
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .partner-step span {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      opacity: 0.45;
+    }
+
+    .partner-step h3 {
+      margin: 12px 0 0;
+      font-size: 32px;
+    }
+
+    .partner-step p {
+      margin: 16px 0 0;
+      color: rgba(255, 255, 255, 0.68);
+      line-height: 1.55;
+    }
+
+    .commission {
+      margin-top: 50px;
+      font-size: clamp(48px, 6vw, 86px);
+      line-height: 0.92;
+    }
+
+    /* CREDENTIALS */
+
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 55px;
+    }
+
+    .credential {
+  padding: 28px;
+  border-top: 3px solid #080808;
+  background: rgba(0,0,0,0.045);
+  text-align: center;
+}
+
+    .credential strong {
+      display: block;
+      font-size: 23px;
+      line-height: 1.15;
+    }
+
+    /* FINAL */
+
+    .final {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(72, 44, 110, 0.26), transparent 42%),
+        #080808;
+    }
+
+    .final-inner {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+  .final h2 {
+  margin: 0;
+  font-size: clamp(56px, 6.5vw, 96px);
+  line-height: 0.88;
+  white-space: nowrap;
+}
+
+    .final p {
+      max-width: 690px;
+      margin: 30px auto 0;
+      font-size: 18px;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .final-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 55px;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 28px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+
+    @media (max-width: 900px) {
+      .corner-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .education-grid,
+      .pricing-grid,
+      .partner-steps,
+      .credentials {
+        grid-template-columns: 1fr;
+      }
+
+      .use-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        padding: 80px 24px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 120px 24px 90px;
+      }
+
+      .hero-copy,
+      .section-copy {
+        font-size: 16px;
+      }
+
+      .hero-actions,
+      .final-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .corner-grid,
+      .use-grid {
+        grid-template-columns: 1fr;
+      }
+
+.corner-card,
+.education-card {
+  min-height: auto;
+}
+
+}
+    
+.final .final-actions {
+  margin-top: 65px;
+}
+
+</style>
+</head>
+
+<body>
+
+ <section class="hero">
+
+  <a href="/" class="clubs-page-logo" aria-label="Back to First Team Footballer">
+    <img src="/White%20Logo.png" alt="First Team Footballer">
+  </a>
+
+  <div class="hero-inner">
+
+      <p class="kicker">
+        For Clubs • Academies • Schools
+      </p>
+
+      <h1 class="display">
+  Develop The Person.
+  <span>Build The Player.</span>
+</h1>
+
+      <p class="hero-copy">
+        Young people already love football. First Team Footballer harnesses that passion
+        to help them learn, think, communicate and develop — as players and as people.
+      </p>
+
+      <div class="hero-actions">
+       <a href="#clubs-content" class="btn btn-primary">For Clubs & Academies</a>
+        <a href="#schools" class="btn btn-secondary">For Schools</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="section-inner">
+
+      <p class="kicker">Why First Team Footballer</p>
+
+      <h2 class="display section-heading">
+        Start With
+        <span>What They Love.</span>
+      </h2>
+
+      <p class="section-copy">
+        Football already has their attention. They talk about it, watch it, play it
+        and dream about it. First Team Footballer uses that passion as the starting point
+        for something bigger — creating opportunities for young people to learn,
+        communicate, make decisions, solve problems and develop through the game they love.
+      </p>
+
+      <div class="love-statement">
+        <h3 class="display">
+          Football Is The Hook.
+          <br>
+          Development Is The Goal.
+        </h3>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="clubs">
+     <div class="section-inner" id="clubs-content">
+
+      <p class="kicker">For Clubs & Academies</p>
+
+      <h2 class="display section-heading">
+        Take Development Beyond
+        <span>The Training Pitch.</span>
+      </h2>
+
+      <p class="section-copy">
+        Training time is precious. First Team Footballer gives coaches another environment
+        to explore areas of player development that cannot always be covered in depth
+        during a practical session.
+      </p>
+
+     <div class="corner-grid">
+
+  <div class="corner-card">
+    <div class="corner-card-shell technical">
+      <h3 class="display">Technical</h3>
+
+      <div class="corner-icon">
+        <img src="/technical-icon.png" alt="Technical development icon">
+      </div>
+
+      <p>Understanding skills, techniques and football actions.</p>
+    </div>
+  </div>
+
+  <div class="corner-card">
+    <div class="corner-card-shell tactical">
+      <h3 class="display">Tactical</h3>
+
+      <div class="corner-icon">
+        <img src="/tactical-icon.png" alt="Tactical development icon">
+      </div>
+
+      <p>Game understanding, positioning, decision-making and recognising situations.</p>
+    </div>
+  </div>
+
+  <div class="corner-card">
+    <div class="corner-card-shell physical">
+      <h3 class="display">Physical</h3>
+
+      <div class="corner-icon">
+        <img src="/physical-icon.png" alt="Physical development icon">
+      </div>
+
+      <p>Preparation, fitness, recovery, nutrition and looking after the body.</p>
+    </div>
+  </div>
+
+  <div class="corner-card">
+    <div class="corner-card-shell psychological">
+      <h3 class="display">Psychological</h3>
+
+      <div class="corner-icon">
+        <img src="/psychological-icon.png" alt="Psychological development icon">
+      </div>
+
+      <p>Confidence, resilience, concentration, attitude and responding to setbacks.</p>
+    </div>
+  </div>
+
+  <div class="corner-card">
+    <div class="corner-card-shell social">
+      <h3 class="display">Social</h3>
+
+      <div class="corner-icon">
+        <img src="/social-icon.png" alt="Social development icon">
+      </div>
+
+      <p>Communication, teamwork, leadership, respect and relationships.</p>
+    </div>
+  </div>
+
+</div>
+
+      <h3 class="display pitch-statement">
+        Some Things Are Coached On The Pitch.
+        Some Things Need To Be Talked About.
+      </h3>
+
+    </div>
+  </section>
+
+  <section class="section light" id="schools">
+    <div class="section-inner">
+
+      <p class="kicker">Learning Through Football</p>
+
+      <h2 class="display section-heading">
+        Turn Their Love Of Football
+        <span>Into An Opportunity To Learn.</span>
+      </h2>
+
+      <p class="section-copy">
+        For many young people, football is something they connect with immediately.
+        First Team Footballer uses that existing interest to encourage learning through
+        reading, discussion, decision-making, problem-solving, communication and play.
+      </p>
+
+      <div class="education-grid">
+
+        <div class="education-card">
+          <h3 class="display">Read & Understand</h3>
+          <p>Reading questions, interpreting information and thinking about what is being asked.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Think & Reason</h3>
+          <p>Considering possibilities, making decisions and explaining why.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Speak & Listen</h3>
+          <p>Discussing ideas, expressing answers and listening to other viewpoints.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Communicate</h3>
+          <p>Building confidence in expressing thoughts, opinions and football knowledge.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Work Together</h3>
+          <p>Turn-taking, teamwork, respect and positive competition with others.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Develop The Person</h3>
+          <p>Confidence, resilience, leadership and learning how to handle success and setbacks.</p>
+        </div>
+
+      </div>
+
+      <h3 class="display learning-line">
+        They're Playing A Football Game.
+        <br>
+        They're Also Learning.
+      </h3>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <p class="kicker">One Game • Different Environments</p>
+
+      <h2 class="display section-heading">
+        Make It Part
+        <span>Of Their Football Journey.</span>
+      </h2>
+
+      <div class="use-grid">
+        <div class="use-card"><strong>Clubhouses</strong></div>
+        <div class="use-card"><strong>Team Socials</strong></div>
+        <div class="use-card"><strong>Football Camps</strong></div>
+        <div class="use-card"><strong>Player Workshops</strong></div>
+        <div class="use-card"><strong>Academy Education</strong></div>
+        <div class="use-card"><strong>After-School Clubs</strong></div>
+        <div class="use-card"><strong>PE & Enrichment</strong></div>
+        <div class="use-card"><strong>Reward Activities</strong></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="section-inner">
+
+      <p class="kicker">Bulk Orders</p>
+
+      <h2 class="display section-heading">
+        Bring It
+        <span>To Your Players.</span>
+      </h2>
+
+      <p class="section-copy">
+        Bulk packages are available for clubs, academies and schools that want
+        First Team Footballer across multiple teams, groups or programmes.
+      </p>
+
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <p class="price-label">Team Pack</p>
+          <h3 class="display">10 Games</h3>
+          <p class="price">£269</p>
+          <p class="price-note">UK mainland delivery included.</p>
+        </div>
+
+        <div class="price-card featured">
+          <span class="most-popular">Most Popular</span>
+          <p class="price-label">Club / School Pack</p>
+          <h3 class="display">20 Games</h3>
+          <p class="price">£499</p>
+          <p class="price-note">UK mainland delivery included.</p>
+        </div>
+
+        <div class="price-card">
+          <p class="price-label">Large Orders</p>
+          <h3 class="display">50+ Games</h3>
+          <p class="price">Let's Talk</p>
+          <p class="price-note">Bespoke pricing for larger organisations.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <p class="kicker">Club Partner Programme</p>
+
+      <h2 class="display section-heading">
+        Don't Want To Buy Stock?
+        <span>Partner With Us.</span>
+      </h2>
+
+      <p class="section-copy">
+        Clubs do not need to purchase games to work with First Team Footballer.
+        Promote the game to your players, parents and club community and earn
+        £5 for every qualifying game sold through your partnership.
+      </p>
+
+      <div class="partner-steps">
+
+        <div class="partner-step">
+          <span>01</span>
+          <h3 class="display">Join</h3>
+          <p>Become an approved First Team Footballer club partner.</p>
+        </div>
+
+        <div class="partner-step">
+          <span>02</span>
+          <h3 class="display">Share</h3>
+          <p>Introduce the game through your club's channels and community.</p>
+        </div>
+
+        <div class="partner-step">
+          <span>03</span>
+          <h3 class="display">Earn</h3>
+          <p>Receive £5 for every qualifying game sold through your club.</p>
+        </div>
+
+      </div>
+
+      <h3 class="display commission">
+        £5 To Your Club.
+        <br>
+        For Every Qualifying Game Sold.
+      </h3>
+
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="section-inner">
+
+      <p class="kicker">Why First Team Footballer</p>
+
+      <h2 class="display section-heading">
+        Created By A Coach.
+        <span>Built For Player Development.</span>
+      </h2>
+
+      <p class="section-copy">
+        First Team Footballer comes from years of working with young players and coaches,
+        and from a belief that development does not begin and end when the training session finishes.
+      </p>
+
+      <div class="credentials">
+        <div class="credential">
+          <strong>20+ YEARS IN COACHING</strong>
+        </div>
+
+        <div class="credential">
+          <strong>UEFA QUALIFIED COACH</strong>
+        </div>
+
+        <div class="credential">
+          <strong>FA COACH DEVELOPER</strong>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section final">
+    <div class="final-inner">
+
+     <h2 class="display">
+  Develop The Person.
+  <br>
+  Build The Player.
+</h2>
+
+     <p>
+  Start with something they already love.
+  Use football to help them become more.
+</p>
+
+<div class="final-actions">
+
+  <a
+    href="/?page=enquiry&type=bulk"
+    class="btn btn-primary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Bulk Order Enquiry
+  </a>
+
+  <a
+    href="/?page=enquiry&type=partner"
+    class="btn btn-secondary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Become A Club Partner
+  </a>
+
+</div>
+
+      <a href="/" class="back">
+        ← Back To First Team Footballer
+      </a>
+
+    </div>
+  </section>
+
+<script>
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
