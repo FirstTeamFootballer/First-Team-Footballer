@@ -349,6 +349,76 @@ background: rgba(0, 0, 0, 0.35);
   background: rgba(0, 0, 0, 0.2);
 }
 
+.hero-game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.hero-game-specs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 0;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.hero-game-specs span {
+  position: relative;
+
+  padding: 0 16px;
+}
+
+.hero-game-specs span + span::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 1px;
+  height: 18px;
+
+  background: rgba(255, 255, 255, 0.4);
+
+  transform: translateY(-50%);
+}
+
+.hero-game-specs strong {
+  margin-right: 5px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  opacity: 0.65;
+}
+
+.hero-game-note {
+  margin: 0;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 0.4px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .scroll-link {
   position: absolute;
 

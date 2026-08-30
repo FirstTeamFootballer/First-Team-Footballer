@@ -497,9 +497,17 @@ if (page === "enquiry-success") {
 
          <div className="hero-buttons">
 
-  <a href="#game" className="btn btn-secondary">
-    Discover The Game
-  </a>
+  <div className="hero-game-info">
+  <div className="hero-game-specs">
+    <span><strong>AGES</strong> 6+</span>
+    <span><strong>PLAYERS</strong> 2–6</span>
+    <span><strong>PLAY TIME</strong> 60–90 MINUTES</span>
+  </div>
+
+  <p className="hero-game-note">
+    Designed for 2–6 players; larger groups can also play.
+  </p>
+</div>
 
 </div>
 
