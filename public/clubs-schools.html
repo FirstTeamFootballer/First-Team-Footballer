@@ -514,40 +514,71 @@ position: relative;
       }
     }
 
-    @media (max-width: 600px) {
-      .section {
-        padding: 80px 24px;
-      }
+   @media (max-width: 600px) {
+  .section {
+    padding: 80px 24px;
+  }
 
-      .hero {
-        min-height: auto;
-        padding: 120px 24px 90px;
-      }
+  .clubs-page-logo {
+    top: 26px;
+    left: 24px;
+  }
 
-      .hero-copy,
-      .section-copy {
-        font-size: 16px;
-      }
+  .clubs-page-logo img {
+    width: 145px;
+  }
 
-      .hero-actions,
-      .final-actions {
-        flex-direction: column;
-      }
+  .hero {
+    min-height: auto;
+    padding: 135px 24px 90px;
+    overflow: hidden;
+  }
 
-      .btn {
-        width: 100%;
-      }
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(52px, 15vw, 72px);
+    line-height: 0.88;
+    white-space: normal;
+  }
 
-      .corner-grid,
-      .use-grid {
-        grid-template-columns: 1fr;
-      }
+  .hero h1 span {
+    display: block;
+  }
 
-.corner-card,
-.education-card {
-  min-height: auto;
-}
+  .hero-copy,
+  .section-copy {
+    font-size: 16px;
+  }
 
+  .hero-actions,
+  .final-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .final .display {
+    max-width: 100%;
+    font-size: clamp(50px, 14vw, 70px);
+    line-height: 0.9;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
+  .corner-grid,
+  .use-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corner-card,
+  .education-card {
+    min-height: auto;
+  }
 }
     
 .final .final-actions {
