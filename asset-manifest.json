@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b1d2710.css",
-    "main.js": "/static/js/main.e37aa4dc.js",
+    "main.css": "/static/css/main.82efede4.css",
+    "main.js": "/static/js/main.cc791c78.js",
     "static/js/453.b5a9c8df.chunk.js": "/static/js/453.b5a9c8df.chunk.js",
     "static/media/FTFPromo.mp4": "/static/media/FTFPromo.37d52a04f3c34eececa8.mp4",
     "static/media/gift-football-fan.jpeg": "/static/media/gift-football-fan.27a2db5de1b153c33365.jpeg",
@@ -16,12 +16,12 @@
     "static/media/physical-icon.png": "/static/media/physical-icon.493afe1269bdea7be658.png",
     "static/media/rest-day-icon.png": "/static/media/rest-day-icon.f3bf50c0bedb4598693a.png",
     "index.html": "/index.html",
-    "main.9b1d2710.css.map": "/static/css/main.9b1d2710.css.map",
-    "main.e37aa4dc.js.map": "/static/js/main.e37aa4dc.js.map",
+    "main.82efede4.css.map": "/static/css/main.82efede4.css.map",
+    "main.cc791c78.js.map": "/static/js/main.cc791c78.js.map",
     "453.b5a9c8df.chunk.js.map": "/static/js/453.b5a9c8df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b1d2710.css",
-    "static/js/main.e37aa4dc.js"
+    "static/css/main.82efede4.css",
+    "static/js/main.cc791c78.js"
   ]
 }
