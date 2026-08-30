@@ -1749,7 +1749,11 @@ if (page === "enquiry-success") {
 
   <span>•</span>
 
-  <a href="#facebook">
+  <a
+    href="https://www.facebook.com/firstteamfootballer"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     Facebook
   </a>
 
