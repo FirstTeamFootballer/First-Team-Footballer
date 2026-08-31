@@ -268,6 +268,105 @@ position: relative;
       line-height: 0.9;
     }
 
+/* CHALLENGES */
+
+.challenge-section {
+  background: #f4f1eb;
+  color: #080808;
+}
+
+.challenge-section .section-copy {
+  color: rgba(8, 8, 8, 0.72);
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 55px;
+}
+
+.challenge-card {
+  min-height: 270px;
+  padding: 28px 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #080808;
+  color: #ffffff;
+
+  border-radius: 8px;
+}
+
+.challenge-number {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+
+  opacity: 0.42;
+}
+
+.challenge-card h3 {
+  margin: 32px 0 0;
+
+  width: 100%;
+
+  font-size: 31px;
+  line-height: 0.95;
+
+  text-align: center;
+}
+
+.challenge-card h3::after {
+  content: "";
+
+  display: block;
+
+  width: 42px;
+  height: 3px;
+
+  margin: 14px auto 0;
+
+  border-radius: 2px;
+
+  background: #ffffff;
+}
+
+.challenge-technical h3::after {
+  background: #ef161d;
+}
+
+.challenge-physical h3::after {
+  background: #f3d029;
+}
+
+.challenge-card p {
+  margin: 42px 0 0;
+
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.55;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.challenge-statement {
+  max-width: 1000px;
+
+  margin: 65px 0 0;
+
+  font-size: clamp(48px, 6vw, 90px);
+  line-height: 0.9;
+}
+
+.challenge-statement span {
+  display: block;
+}
+
     /* SCHOOLS */
 
     .education-grid {
@@ -277,26 +376,50 @@ position: relative;
       margin-top: 55px;
     }
 
-    .education-card {
-      min-height: 220px;
-      padding: 28px;
-      background: #080808;
-      color: #ffffff;
-      border-radius: 8px;
-    }
+  .education-card {
+  min-height: 220px;
+  padding: 42px 28px 28px;
+  background: #080808;
+  color: #ffffff;
+  border-radius: 8px;
+}
 
-    .education-card h3 {
-      margin: 0;
-      font-size: 28px;
-      line-height: 1;
-    }
+.education-card h3 {
+  margin: 0;
 
-    .education-card p {
-      margin: 20px 0 0;
-      font-size: 15px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.72);
-    }
+  width: 100%;
+
+  font-size: 28px;
+  line-height: 1;
+
+  text-align: center;
+}
+
+.education-card h3::after {
+  content: "";
+
+  display: block;
+
+  width: 42px;
+  height: 3px;
+
+  margin: 14px auto 0;
+
+  border-radius: 2px;
+
+  background: #ffffff;
+}
+
+  .education-card p {
+  margin: 20px 0 0;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.72);
+}
 
     .learning-line {
       margin-top: 65px;
@@ -503,9 +626,10 @@ position: relative;
       }
 
       .education-grid,
-      .pricing-grid,
-      .partner-steps,
-      .credentials {
+.challenge-grid,
+.pricing-grid,
+.partner-steps,
+.credentials {
         grid-template-columns: 1fr;
       }
 
@@ -648,6 +772,67 @@ position: relative;
     </div>
   </section>
 
+
+
+  <section class="section light" id="schools">
+    <div class="section-inner">
+
+      <p class="kicker">Learning Through Football</p>
+
+      <h2 class="display section-heading">
+        Turn Their Love Of Football
+        <span>Into An Opportunity To Learn.</span>
+      </h2>
+
+      <p class="section-copy">
+        For many young people, football is something they connect with immediately.
+        First Team Footballer uses that existing interest to encourage learning through
+        reading, discussion, decision-making, problem-solving, communication and play.
+      </p>
+
+      <div class="education-grid">
+
+        <div class="education-card">
+          <h3 class="display">Read & Understand</h3>
+          <p>Reading questions, interpreting information and thinking about what is being asked.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Think & Reason</h3>
+          <p>Considering possibilities, making decisions and explaining why.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Speak & Listen</h3>
+          <p>Discussing ideas, expressing answers and listening to other viewpoints.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Communicate</h3>
+          <p>Building confidence in expressing thoughts, opinions and football knowledge.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Work Together</h3>
+          <p>Turn-taking, teamwork, respect and positive competition with others.</p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="display">Develop The Person</h3>
+          <p>Confidence, resilience, leadership and learning how to handle success and setbacks.</p>
+        </div>
+
+      </div>
+
+      <h3 class="display learning-line">
+        They're Playing A Football Game.
+        <br>
+        They're Also Learning.
+      </h3>
+
+    </div>
+  </section>
+
   <section class="section" id="clubs">
      <div class="section-inner" id="clubs-content">
 
@@ -736,60 +921,49 @@ position: relative;
     </div>
   </section>
 
-  <section class="section light" id="schools">
+  <section class="section challenge-section">
     <div class="section-inner">
 
-      <p class="kicker">Learning Through Football</p>
+      <p class="kicker">The Game In Action</p>
 
       <h2 class="display section-heading">
-        Turn Their Love Of Football
-        <span>Into An Opportunity To Learn.</span>
+        More Than
+        <span>Questions.</span>
       </h2>
 
       <p class="section-copy">
-        For many young people, football is something they connect with immediately.
-        First Team Footballer uses that existing interest to encourage learning through
-        reading, discussion, decision-making, problem-solving, communication and play.
+        First Team Footballer combines football knowledge, discussion and decision-making
+        with Technical and Physical Challenges that bring movement, skill and competition
+        into the game.
       </p>
 
-      <div class="education-grid">
+      <div class="challenge-grid">
 
-        <div class="education-card">
-          <h3 class="display">Read & Understand</h3>
-          <p>Reading questions, interpreting information and thinking about what is being asked.</p>
+       <div class="challenge-card challenge-technical">
+  <h3 class="display">Technical Challenges</h3>
+          <p>Football-based challenges that put technique into action.</p>
         </div>
 
-        <div class="education-card">
-          <h3 class="display">Think & Reason</h3>
-          <p>Considering possibilities, making decisions and explaining why.</p>
+       <div class="challenge-card challenge-physical">
+  <h3 class="display">Physical Challenges</h3>
+          <p>Fun physical challenges that get players up and moving.</p>
         </div>
 
-        <div class="education-card">
-          <h3 class="display">Speak & Listen</h3>
-          <p>Discussing ideas, expressing answers and listening to other viewpoints.</p>
+        <div class="challenge-card">
+          <h3 class="display">Individual Challenges</h3>
+          <p>Take on the challenge yourself. Can you complete it?</p>
         </div>
 
-        <div class="education-card">
-          <h3 class="display">Communicate</h3>
-          <p>Building confidence in expressing thoughts, opinions and football knowledge.</p>
-        </div>
-
-        <div class="education-card">
-          <h3 class="display">Work Together</h3>
-          <p>Turn-taking, teamwork, respect and positive competition with others.</p>
-        </div>
-
-        <div class="education-card">
-          <h3 class="display">Develop The Person</h3>
-          <p>Confidence, resilience, leadership and learning how to handle success and setbacks.</p>
+        <div class="challenge-card">
+          <h3 class="display">Head-To-Head Challenges</h3>
+          <p>Go up against another player and see who comes out on top.</p>
         </div>
 
       </div>
 
-      <h3 class="display learning-line">
-        They're Playing A Football Game.
-        <br>
-        They're Also Learning.
+      <h3 class="display challenge-statement">
+        It's Not Just What You Know.
+        <span>It's What You Can Do.</span>
       </h3>
 
     </div>
