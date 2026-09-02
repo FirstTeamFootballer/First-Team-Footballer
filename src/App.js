@@ -1777,18 +1777,38 @@ if (page === "enquiry-success") {
 </div>
 
   <div className="footer-links">
-    <a href="mailto:info@firstteamfootballer.com">
-  Contact
-</a>
-    <span>•</span>
-    <a href="/delivery.html">Delivery</a>
-    <span>•</span>
-    <a href="/returns.html">Returns</a>
-    <span>•</span>
-    <a href="/privacy.html">Privacy</a>
-    <span>•</span>
-    <a href="/terms.html">Terms</a>
-  </div>
+  <a
+    href="mailto:info@firstteamfootballer.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Contact
+  </a>
+
+  <span>•</span>
+
+  <a href="/delivery.html" target="_blank" rel="noopener noreferrer">
+    Delivery
+  </a>
+
+  <span>•</span>
+
+  <a href="/returns.html" target="_blank" rel="noopener noreferrer">
+    Returns
+  </a>
+
+  <span>•</span>
+
+  <a href="/privacy.html" target="_blank" rel="noopener noreferrer">
+    Privacy
+  </a>
+
+  <span>•</span>
+
+  <a href="/terms.html" target="_blank" rel="noopener noreferrer">
+    Terms
+  </a>
+</div>
 
   <p className="footer-copyright">
     © 2026 First Team Footballer. All rights reserved.
