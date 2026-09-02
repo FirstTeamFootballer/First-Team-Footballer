@@ -7,7 +7,7 @@ import togetherFamily from "./assets/together-family.jpeg";
 import togetherFriends from "./assets/together-friends.jpeg";
 import togetherFootball from "./assets/together-football.jpeg";
 import giftPhoto from "./assets/gift-football-fan.jpeg";
-import whatsInBox from "./assets/whats-in-box.jpg";
+import whatsInBox from "./assets/Complete.png";
 import technicalIcon from "./assets/technical-icon.png";
 import tacticalIcon from "./assets/tactical-icon.png";
 import physicalIcon from "./assets/physical-icon.png";
